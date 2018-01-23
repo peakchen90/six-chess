@@ -42,7 +42,7 @@ module.exports = WebpackMerge(baseConfig, {
       canPrint: true
     }),
     new ExtractTextPlugin({
-      filename: 'main.css',
+      filename: 'style/main.css',
       allChunks: true
     })
   ]

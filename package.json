@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "six chess base on koa, socket.io and react",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "webpack-dev-server --config ./build/webpack.config.dev.js",
+    "build": "webpack --config ./build/webpack.config.prod.js --progress"
+  },
   "keywords": [
     "six chess",
     "socket.io",
@@ -24,12 +27,15 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^4.0.1",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
     "json-loader": "^0.5.7",
+    "node-sass": "^4.7.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
@@ -37,5 +43,16 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1",
     "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.77.2"
   }
 }

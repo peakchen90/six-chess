@@ -3,17 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    main: path.resolve(srcDir, 'main.js')
+    index: path.resolve(__dirname, '../src/main.js')
   },
   output: {
-    path: distDir,
+    path: path.resolve(__dirname, '../dist'),
     filename: '[name].js'
   },
   resolve: {
-    alias: {
-      common: path.resolve(__dirname, '../src/common'),
-      images: path.resolve(__dirname, '../assets/images')
-    }
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {}
   },
   module: {
     rules: [
@@ -54,12 +52,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(srcDir, 'index.html'),
-      filename: path.resolve(distDir, 'index.html'),
+      template: path.resolve(__dirname, '../src/index.html'),
+      filename: 'index.html',
       minify: {
         removeComments: false,
         collapseWhitespace: true,
-        removeAttributeQuotes: true
+        removeAttributeQuotes: false
       },
       hash: true
     })

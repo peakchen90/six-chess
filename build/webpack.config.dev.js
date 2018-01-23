@@ -24,7 +24,7 @@ module.exports = WebpackMerge(baseConfig, {
     new webpack.NamedModulesPlugin()
   ],
   devServer: {
-    port: devPort,
+    port: 8888,
     hot: true,
     proxy: {
     }
