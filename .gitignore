@@ -1,0 +1,17 @@
+.DS_Store
+thumbs.db
+!.gitkeep
+
+node_modules/
+/dist
+/test.js
+
+.idea/
+.vscode/*
+!.vscode/launch.json
+
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+
