@@ -1,7 +1,7 @@
 {
   "name": "six-chess",
   "version": "0.0.1",
-  "description": "six chess base on koa, socket.io and react",
+  "description": "six chess game base on koa, socket.io and react",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.config.dev.js",
