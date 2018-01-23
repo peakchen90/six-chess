@@ -11,7 +11,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
-    alias: {}
+    alias: {
+      'root': path.resolve(__dirname, '..'),
+      'common': path.resolve(__dirname, '../src/common')
+    }
   },
   module: {
     rules: [
